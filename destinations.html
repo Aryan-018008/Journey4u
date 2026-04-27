@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Journey4u — Destinations</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo"><a href="index.html"> Journey4u</a></div>
+    <button class="hamburger" id="hamburger">&#9776;</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="destinations.html" class="active">Destinations</a></li>
+      <li><a href="packages.html">Packages</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="page-hero">
+    <div class="page-hero-bg">
+      <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=1600&q=80" alt="World destinations">
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="page-hero-content">
+      <p class="hero-eyebrow">Explore the Globe</p>
+      <h1>Our Destinations</h1>
+    </div>
+  </section>
+
+  <!-- Filter -->
+  <section class="filter-section">
+    <div class="filter-bar">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="asia">Asia</button>
+      <button class="filter-btn" data-filter="europe">Europe</button>
+      <button class="filter-btn" data-filter="beach">Beach</button>
+      <button class="filter-btn" data-filter="adventure">Adventure</button>
+    </div>
+  </section>
+
+  <!-- Destination Grid -->
+  <section class="section destinations-section">
+    <div class="dest-grid" id="destGrid">
+
+      <div class="dest-card-full" data-cat="asia beach">
+        <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=700&q=80" alt="Bali">
+        <div class="dest-info">
+          <h3>Bali, Indonesia</h3>
+          <p>Discover the Island of the Gods — lush rice terraces, ancient temples, and world-class surf. Perfect for honeymooners and solo adventurers alike.</p>
+          <div class="dest-meta">
+            <span class="tag">🌏 Asia</span>
+            <span class="tag">🏖 Beach</span>
+            <span class="price-tag">From ₹45,000</span>
+          </div>
+          <a href="packages.html" class="btn btn-primary">View Packages</a>
+        </div>
+      </div>
+
+      <div class="dest-card-full" data-cat="europe">
+        <img src="https://t4.ftcdn.net/jpg/02/96/15/35/360_F_296153501_B34baBHDkFXbl5RmzxpiOumF4LHGCvAE.jpg" alt="Paris">
+        <div class="dest-info">
+          <h3>Paris, France</h3>
+          <p>The City of Light never fails to enchant. Stroll along the Seine, savour a croissant, and lose yourself in the Louvre's masterpieces.</p>
+          <div class="dest-meta">
+            <span class="tag">🌍 Europe</span>
+            <span class="price-tag">From ₹85,000</span>
+          </div>
+          <a href="packages.html" class="btn btn-primary">View Packages</a>
+        </div>
+      </div>
+
+      <div class="dest-card-full" data-cat="asia adventure">
+        <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=700&q=80" alt="Tokyo">
+        <div class="dest-info">
+          <h3>Tokyo, Japan</h3>
+          <p>A city of delightful contradictions — ancient shrines beside neon-lit skyscrapers. Sushi, sumo and sakura await you.</p>
+          <div class="dest-meta">
+            <span class="tag">🌏 Asia</span>
+            <span class="tag">🗺 Adventure</span>
+            <span class="price-tag">From ₹75,000</span>
+          </div>
+          <a href="packages.html" class="btn btn-primary">View Packages</a>
+        </div>
+      </div>
+
+      <div class="dest-card-full" data-cat="europe beach">
+        <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?w=700&q=80" alt="Santorini">
+        <div class="dest-info">
+          <h3>Santorini, Greece</h3>
+          <p>Iconic blue-domed churches, volcanic beaches and the world's most spectacular sunsets. A bucket-list destination for good reason.</p>
+          <div class="dest-meta">
+            <span class="tag">🌍 Europe</span>
+            <span class="tag">🏖 Beach</span>
+            <span class="price-tag">From ₹95,000</span>
+          </div>
+          <a href="packages.html" class="btn btn-primary">View Packages</a>
+        </div>
+      </div>
+
+      <div class="dest-card-full" data-cat="adventure">
+        <img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=700&q=80" alt="Nepal">
+        <div class="dest-info">
+          <h3>Nepal & Himalayas</h3>
+          <p>Trek through the roof of the world. From Kathmandu's ancient squares to Everest Base Camp — a once-in-a-lifetime challenge.</p>
+          <div class="dest-meta">
+            <span class="tag">🗺 Adventure</span>
+            <span class="price-tag">From ₹55,000</span>
+          </div>
+          <a href="packages.html" class="btn btn-primary">View Packages</a>
+        </div>
+      </div>
+
+      <div class="dest-card-full" data-cat="beach asia">
+        <img src="https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=700&q=80" alt="Maldives">
+        <div class="dest-info">
+          <h3>Maldives</h3>
+          <p>Overwater bungalows, crystal-clear lagoons and coral reefs teeming with life. The ultimate tropical escape.</p>
+          <div class="dest-meta">
+            <span class="tag">🏖 Beach</span>
+            <span class="tag">🌏 Asia</span>
+            <span class="price-tag">From ₹1,10,000</span>
+          </div>
+          <a href="packages.html" class="btn btn-primary">View Packages</a>
+        </div>
+      </div>
+
+    </div>
+    <p class="no-results" id="noResults" style="display:none; text-align:center; padding:2rem; color:#888;">No destinations found for this filter.</p>
+  </section>
+
+  <section class="cta-banner">
+    <div class="cta-content">
+      <h2>Can't Decide? Let Us Help!</h2>
+      <p>Our travel experts will find the perfect destination for you.</p>
+      <a href="contact.html" class="btn btn-primary">Talk to an Expert</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+   <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>Journey4u</h3>
+        <p>Crafting unforgettable journeys since 2025. Your adventure, our passion.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="destinations.html">Destinations</a></li>
+          <li><a href="packages.html">Packages</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p>📍 Bhubaneswar, Odisha</p>
+        <p>📞 +91 6888745632</p>
+        <p>✉ hello@journey4u.com</p>
+      </div>
+
+      <div class="footer-social">
+      <h4>Follow Us</h4>
+      <div class="social-icons">
+      <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://x.com/" target="_blank"><i class="fab fa-x-twitter"></i></a>
+      <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    </div>
+</div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Journey4u |  All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
