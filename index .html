@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Journey4u — Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo"><a href="index.html">Journey4u</a></div>
+    <button class="hamburger" id="hamburger" aria-label="Menu">&#9776;</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="destinations.html">Destinations</a></li>
+      <li><a href="packages.html">Packages</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero  -->
+  <section class="hero">
+    <div class="hero-bg">
+      <div class="hero-overlay"></div>
+      <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1600&q=80" alt="Tropical beach" class="hero-img">
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Your Journey Begins Here</p>
+      <h1 class="hero-title">Explore the<br><em>World's Wonders</em></h1>
+      <p class="hero-subtitle">Handcrafted travel experiences for the curious soul. From golden beaches to misty mountains.</p>
+      <div class="hero-cta">
+        <a href="packages.html" class="btn btn-primary">View Packages</a>
+        <a href="destinations.html" class="btn btn-outline">Explore Destinations</a>
+      </div>
+    </div>
+    <div class="hero-scroll">↓ Scroll to discover</div>
+  </section>
+
+  <!-- Search -->
+  <section class="search-section">
+    <div class="search-card">
+      <h2>Find Your Dream Trip</h2>
+      <div class="search-row">
+        <div class="search-group">
+          <label>Destination</label>
+          <input type="text" placeholder="Where do you want to go?" id="searchDest">
+        </div>
+        <div class="search-group">
+          <label>Travel Month</label>
+          <select id="searchMonth">
+            <option value="">Any Month</option>
+            <option>January</option><option>February</option><option>March</option>
+            <option>April</option><option>May</option><option>June</option>
+            <option>July</option><option>August</option><option>September</option>
+            <option>October</option><option>November</option><option>December</option>
+          </select>
+        </div>
+        <div class="search-group">
+          <label>Budget</label>
+          <select id="searchBudget">
+            <option value="">Any Budget</option>
+            <option>Under ₹30,000</option>
+            <option>₹30,000 – ₹70,000</option>
+            <option>₹70,000+</option>
+          </select>
+        </div>
+        <a href="destinations.html" class="btn btn-primary search-btn">Search</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Statictics -->
+  <section class="stats-section">
+    <div class="stat"><span class="stat-num">12K+</span><span class="stat-label">Happy Travellers</span></div>
+    <div class="stat"><span class="stat-num">80+</span><span class="stat-label">Destinations</span></div>
+    <div class="stat"><span class="stat-num">150+</span><span class="stat-label">Tour Packages</span></div>
+    <div class="stat"><span class="stat-num">15</span><span class="stat-label">Years Experience</span></div>
+  </section>
+
+  <!-- Destination -->
+  <section class="section">
+    <div class="section-header">
+      <p class="section-eyebrow">Most Popular</p>
+      <h2>Featured Destinations</h2>
+    </div>
+    <div class="card-grid">
+      <a href="destinations.html" class="dest-card">
+        <img src="https://images.unsplash.com/photo-1538485399081-7191377e8241?w=600&q=80" alt="Bali">
+        <div class="dest-info">
+          <h3>Bali, Indonesia</h3>
+          <p>Temples, terraces & turquoise waves</p>
+          <span class="tag">From ₹45,000</span>
+        </div>
+      </a>
+      <a href="destinations.html" class="dest-card">
+        <img src="https://t4.ftcdn.net/jpg/02/96/15/35/360_F_296153501_B34baBHDkFXbl5RmzxpiOumF4LHGCvAE.jpg" alt="Paris">
+        <div class="dest-info">
+          <h3>Paris, France</h3>
+          <p>Romance, art & the Eiffel glow</p>
+          <span class="tag">From ₹85,000</span>
+        </div>
+      </a>
+      <a href="destinations.html" class="dest-card">
+        <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=600&q=80" alt="Tokyo">
+        <div class="dest-info">
+          <h3>Tokyo, Japan</h3>
+          <p>Neon nights & cherry blossom days</p>
+          <span class="tag">From ₹75,000</span>
+        </div>
+      </a>
+      <a href="destinations.html" class="dest-card">
+        <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?w=600&q=80" alt="Santorini">
+        <div class="dest-info">
+          <h3>Santorini, Greece</h3>
+          <p>Whitewashed cliffs & sunset bliss</p>
+          <span class="tag">From ₹95,000</span>
+        </div>
+      </a>
+    </div>
+    <div class="center-cta">
+      <a href="destinations.html" class="btn btn-outline">See All Destinations →</a>
+    </div>
+  </section>
+
+  <!-- Why choose us  -->
+  <section class="why-section">
+    <div class="section-header light">
+      <p class="section-eyebrow">Why Choose Us</p>
+      <h2>Travel with Confidence</h2>
+    </div>
+    <div class="features-grid">
+      <div class="feature">
+        <span class="feat-icon">🗺️</span>
+        <h3>Expert Planning</h3>
+        <p>Every itinerary is crafted by destination experts who've been there themselves.</p>
+      </div>
+      <div class="feature">
+        <span class="feat-icon">💰</span>
+        <h3>Best Price Guarantee</h3>
+        <p>Found it cheaper? We'll match it — no questions asked.</p>
+      </div>
+      <div class="feature">
+        <span class="feat-icon">🛡️</span>
+        <h3>24/7 Support</h3>
+        <p>Our team is always a call away, wherever in the world you are.</p>
+      </div>
+      <div class="feature">
+        <span class="feat-icon">🌱</span>
+        <h3>Responsible Travel</h3>
+        <p>We offset carbon and support local communities on every trip.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonial -->
+  <section class="section testimonials">
+    <div class="section-header">
+      <p class="section-eyebrow">Real Stories</p>
+      <h2>Travellers Love Us</h2>
+    </div>
+    <div class="testi-slider" id="testiSlider">
+      <div class="testi-card active">
+        <p>"Journey4u made our honeymoon in Santorini absolutely magical. Every detail was taken care of. We didn't stress once!"</p>
+        <div class="testi-author"><strong>Priya & Arjun</strong> · Mumbai</div>
+        <div class="stars">★★★★★</div>
+      </div>
+      <div class="testi-card">
+        <p>"The Bali trip was beyond our expectations. The private villa, the sunrise trek — it was the trip of a lifetime."</p>
+        <div class="testi-author"><strong>Rahul Sharma</strong> · Bangalore</div>
+        <div class="stars">★★★★</div>
+      </div>
+      <div class="testi-card">
+        <p>"Journey4u's Tokyo package was perfectly balanced — culture, food, and adventure all in one. Highly recommend!"</p>
+        <div class="testi-author"><strong>Sneha Patel</strong> · Delhi</div>
+        <div class="stars">★★★★★</div>
+      </div>
+    </div>
+    <div class="testi-dots" id="testiDots">
+      <span class="dot active" onclick="goToTestimonial(0)"></span>
+      <span class="dot" onclick="goToTestimonial(1)"></span>
+      <span class="dot" onclick="goToTestimonial(2)"></span>
+    </div>
+  </section>
+
+  <!--Banner -->
+  <section class="cta-banner">
+    <div class="cta-content">
+      <h2>Ready to Pack Your Bags?</h2>
+      <p>Talk to our travel experts and get a free personalised itinerary today.</p>
+      <a href="contact.html" class="btn btn-primary">Enquire Here</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>Journey4u</h3>
+        <p>Crafting unforgettable journeys since 2025. Your adventure, our passion.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="destinations.html">Destinations</a></li>
+          <li><a href="packages.html">Packages</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p>📍 Bhubaneswar, Odisha</p>
+        <p>📞 +91 6888745632</p>
+        <p>✉ hello@journey4u.com</p>
+      </div>
+
+      <div class="footer-social">
+      <h4>Follow Us</h4>
+      <div class="social-icons">
+      <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://x.com/" target="_blank"><i class="fab fa-x-twitter"></i></a>
+      <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    </div>
+</div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Journey4u |  All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
