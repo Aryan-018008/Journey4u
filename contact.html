@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Journey4u — Contact Us</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo"><a href="index.html"> Journey4u</a></div>
+    <button class="hamburger" id="hamburger">&#9776;</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="destinations.html">Destinations</a></li>
+      <li><a href="packages.html">Packages</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="page-hero">
+    <div class="page-hero-bg">
+      <img src="https://images.unsplash.com/photo-1423946476173-0d4b07d1e8f6?w=1600&q=80" alt="Contact us">
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="page-hero-content">
+      <p class="hero-eyebrow">We'd Love to Hear From You</p>
+      <h1>Contact Us</h1>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section contact-section">
+
+    <div class="contact-info">
+      <h2>Get in Touch</h2>
+      <p>Whether you have a question about a package, need a custom itinerary, or just want to chat about travel — our team is here for you.</p>
+
+      <div class="contact-item">
+        <span class="contact-icon">📍</span>
+        <div>
+          <strong>Visit Us</strong>
+          <p>18, Bhubaneswar, Odisha, 751003</p>
+        </div>
+      </div>
+      <div class="contact-item">
+        <span class="contact-icon">📞</span>
+        <div>
+          <strong>Call Us</strong>
+          <p>+91 6888745632 </p>
+          <p>Mon–Sat, 9am – 7pm</p>
+        </div>
+      </div>
+      <div class="contact-item">
+        <span class="contact-icon">✉</span>
+        <div>
+          <strong>Email Us</strong>
+          <p>hello@journey4u.com</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- FORM -->
+    <div class="contact-form-wrap">
+      <h2>Send an Enquiry</h2>
+      <div id="formSuccess" class="form-success" style="display:none;">
+        ✅ Thank you! We'll get back to you within 24 hours.
+      </div>
+      <div id="contactForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fname">First Name *</label>
+            <input type="text" id="fname" placeholder="Enter Your First Name">
+            <span class="error-msg" id="fnameErr"></span>
+          </div>
+          <div class="form-group">
+            <label for="lname">Last Name *</label>
+            <input type="text" id="lname" placeholder="Enter Your Last Name">
+            <span class="error-msg" id="lnameErr"></span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address *</label>
+          <input type="email" id="email" placeholder="abc@example.com">
+          <span class="error-msg" id="emailErr"></span>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number *</label>
+          <input type="tel" id="phone" placeholder="+91 XXXXX XXXXX" maxlength="10">
+          <span class="error-msg" id="phoneErr"></span>
+        </div>
+        <div class="form-group">
+          <label for="destination">Interested Destination</label>
+          <select id="destination">
+            <option value="">Select a destination…</option>
+            <option>Bali, Indonesia</option>
+            <option>Paris, France</option>
+            <option>Tokyo, Japan</option>
+            <option>Santorini, Greece</option>
+            <option>Maldives</option>
+            <option>Nepal & Himalayas</option>
+            <option>Other / Not sure yet</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="travellers">Number of Travellers</label>
+          <select id="travellers">
+            <option>1 (Solo)</option>
+            <option>2 (Couple / Friends)</option>
+            <option>3–5</option>
+            <option>6+</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Your Message *</label>
+          <textarea id="message" rows="5" placeholder="Tell us about your dream trip — dates, budget, special requests…"></textarea>
+          <span class="error-msg" id="messageErr"></span>
+        </div>
+        <button class="btn btn-primary" id="submitBtn" onclick="submitForm()">Send Enquiry →</button>
+      </div>
+    </div>
+
+  </section>
+
+   <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>Journey4u</h3>
+        <p>Crafting unforgettable journeys since 2025. Your adventure, our passion.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="destinations.html">Destinations</a></li>
+          <li><a href="packages.html">Packages</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p>📍 Bhubaneswar, Odisha</p>
+        <p>📞 +91 6888745632</p>
+        <p>✉ hello@journey4u.com</p>
+      </div>
+
+      <div class="footer-social">
+      <h4>Follow Us</h4>
+      <div class="social-icons">
+      <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://x.com/" target="_blank"><i class="fab fa-x-twitter"></i></a>
+      <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    </div>
+</div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Journey4u |  All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
